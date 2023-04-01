@@ -1,89 +1,45 @@
 class ProductManager {
-    #products;
 
     constructor() {
-        this.#products = [];
+        this.products = []
+    }
+
+    getProductId = () => {
+        const amount = this.products.length;
+        const productId = (amount > 0) ? this.products[amount - 1].id + 1 : 1;
+        return productId;
     }
 
     getProducts = () => {
-        return this.#products;
-    };
-
-
-    createProductId = () => {
-        const index = this.#products.length;
-        const id = index > 0 ? index + 1 : 1;
-        return id;
-    };
-
-
-    searchProdcutCode = (productCode) => {
-        const productsCopy = [...this.#products];
-        const productSearched = productsCopy.some(
-            (product) => product.code === productCode
-        );
-        return productSearched;
-    };
-
-    validateInputs = ({
-        title,
-        description,
-        price,
-        thumnail,
-        code,
-        stock
-    }) => {
-        return (
-            title.trim().length > 0 &&
-            description.trim().length > 0 &&
-            thumnail.trim().length > 0 &&
-            code.trim().length > 0 &&
-            price.toString().trim().length > 0 &&
-            stock.toString().trim().length > 0 &&
-            price > 0 &&
-            stock > 0
-        );
-    };
-
+        return this.products
+    }
 
     getProductById = (productId) => {
-        const productsCopy = [...this.#products];
-        const productSearched = productsCopy.find(
-            (product) => product.id === productId
-        );
-        productSearched
-            ?
-            console.log(productSearched) :
-            console.error(`Product: ${productId} NOT FOUND`);
-    };
+        const productFound = this.products.find(element => element.id == productId)
+        if (productFound) {
+            console.log("The product is: ", productFound.title);
+        } else {
+            console.log("Not found");
+        }
+    }
 
+    addProduct = (title, description, price, thumbnail, code, stock) => {
+        if (this.products.some(p => p.code == code)) return
 
-    addProduct = (title, description, price, thumnail, code, stock) => {
-        const newProduct = {
-            id: this.createProductId(),
+        const product = {
+            id: this.getProductId(),
             title,
             description,
             price,
-            thumnail,
+            thumbnail,
             code,
-            stock,
-        };
-        if (this.searchProdcutCode(newProduct.code)) {
-            console.error(`Product ${newProduct.code} is already in the DB`);
-            return;
+            stock
         }
-        if (!this.validateInputs({
-                ...newProduct
-            })) {
-            console.error("Fill all the inputs to continue");
-        } else {
-            this.#products.push(newProduct);
-            console.log(
-                `Product: ${newProduct.title} has succesfully been added to the DB`
-            );
-        }
-    };
+        this.products.push(product)
+    }
+
 }
+
 
 const product = new ProductManager()
 console.log(product.getProducts());
