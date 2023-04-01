@@ -1,0 +1,132 @@
+[
+   {
+      "id": 1,
+      "title": "aaaa",
+      "price": 109.95,
+      "description": "xxxxxxxxxxxxxxxx",
+      "category": "men's clothing",
+      "thumbnail": [
+         ""
+      ],
+      "code": "ean0",
+      "state": true,
+      "stock": 10
+   },
+   {
+      "id": 2,
+      "title": "bbbb",
+      "price": 22.3,
+      "description": "xxxxxxxxxxxxxxxx",
+      "category": "men's clothing",
+      "thumbnail": [
+         ""
+      ],
+      "code": "ean1",
+      "state": true,
+      "stock": 10
+   },
+   {
+      "id": 3,
+      "title": "cccc",
+      "price": 55.99,
+      "description": "xxxxxxxxxxxxxxxx",
+      "category": "men's clothing",
+      "thumbnail": [
+         ""
+      ],
+      "code": "ean2",
+      "state": true,
+      "stock": 10
+   },
+   {
+      "id": 4,
+      "title": "dddd",
+      "price": 15.99,
+      "description": "xxxxxxxxxxxxxxxx",
+      "category": "men's clothing",
+      "thumbnail": [
+         ""
+      ],
+      "code": "ean3",
+      "state": true,
+      "stock": 10
+   },
+   {
+      "id": 5,
+      "title": "eeee",
+      "price": 695,
+      "description": "xxxxxxxxxxxxxxxx",
+      "category": "jewelery",
+      "thumbnail": [
+         ""
+      ],
+      "code": "ean4",
+      "state": true,
+      "stock": 10
+   },
+   {
+      "id": 6,
+      "title": "ffff",
+      "price": 168,
+      "description": "xxxxxxxxxxxxxxxx",
+      "category": "jewelery",
+      "thumbnail": [
+         ""
+      ],
+      "code": "ean5",
+      "state": true,
+      "stock": 10
+   },
+   {
+      "id": 7,
+      "title": "gggg",
+      "price": 9.99,
+      "description": "xxxxxxxxxxxxxxxx",
+      "category": "jewelery",
+      "thumbnail": [
+         ""
+      ],
+      "code": "ean6",
+      "state": true,
+      "stock": 10
+   },
+   {
+      "id": 8,
+      "title": "hhhh",
+      "price": 10.99,
+      "description": "xxxxxxxxxxxxxxxx",
+      "category": "jewelery",
+      "thumbnail": [
+         ""
+      ],
+      "code": "ean7",
+      "state": true,
+      "stock": 10
+   },
+   {
+      "id": 9,
+      "title": "iiii",
+      "price": 64,
+      "description": "xxxxxxxxxxxxxxxx",
+      "category": "electronics",
+      "thumbnail": [
+         ""
+      ],
+      "code": "asd901",
+      "state": true,
+      "stock": 10
+   },
+   {
+      "id": 10,
+      "title": "jjjj",
+      "price": 109,
+      "description": "xxxxxxxxxxxxxxxx",
+      "category": "electronics",
+      "thumbnail": [
+         ""
+      ],
+      "code": "ean8",
+      "state": true,
+      "stock": 10
+   }
+]
